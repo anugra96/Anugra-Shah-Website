@@ -10,7 +10,7 @@ export default function Portfolio() {
         {
             id: -1,
             active: false,
-            category: StaticMapProjects
+            category: StaticMapProjects,
         }
     );
     const [data, setData] = useState([]);
@@ -71,17 +71,29 @@ export default function Portfolio() {
 
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
-            <ul className>
-                {list.map(item => (
-                    <PortfolioList
-                        title={item.title}
-                        active={selected === item.id}
-                        setSelected={setSelected}
-                        id={item.id}
-                    />
-                ))}
-            </ul>
+            {(!clickedItem.active) ?
+
+                <>
+                    <h1 className="go_away_mobile">Portfolio</h1>
+                    <ul className="go_away_mobile">
+                        {list.map(item => (
+                            <PortfolioList
+                                title={item.title}
+                                active={selected === item.id}
+                                setSelected={setSelected}
+                                id={item.id}
+                            />
+                        ))}
+                    </ul>
+
+                </>
+
+                :
+                <>
+                </>
+
+            }
+
             <div className="container">
 
                 {(clickedItem.active) ?
@@ -151,6 +163,25 @@ export default function Portfolio() {
 
 
             </div>
+
+            {(!clickedItem.active) ?
+
+                <ul className="go_away_mobile_bottom">
+                    {list.map(item => (
+                        <PortfolioList
+                            title={item.title}
+                            active={selected === item.id}
+                            setSelected={setSelected}
+                            id={item.id}
+                        />
+                    ))}
+                </ul>
+
+                :
+                <>
+                </>
+
+            }
         </div>
     )
 }

@@ -40,7 +40,7 @@ export default function Intro() {
                     <a href="https://www.linkedin.com/in/anugrashah/" class="fa fa-linkedin" target="_blank"></a>
                 </div>
 
-                <a href="#portfolio" className="arrow_down">
+                <a href="#workmap" className="arrow_down">
                     <img src="assets/down.png" alt="" />
                 </a>
 

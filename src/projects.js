@@ -251,6 +251,21 @@ export const WebDevProjects = [
             ],
         desc: "Developed a web GIS application using Flask, Jupyter Notebook and Leaflet. The app visualizes the voting record of wards in Brampton, ON using a choropleth map. Features include a dynamic pop-ups providing city councilor contact info based on user's current location."
     },
+    {
+        id: 3,
+        featured: true,
+        title: "Web Banners",
+        github: "",
+        link: "",
+        img: "",
+        tools:
+            [
+                "Javascript",
+                "Greensock Animations",
+                "HTML, CSS",
+            ],
+        desc: "HTML banner ads and landing pages using Javascript/CSS animations for Mazda, Air Canada, HSBC, Johnson & Johnson and Shell Canada."
+    }
 ];
 
 

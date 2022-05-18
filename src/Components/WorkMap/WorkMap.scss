@@ -20,7 +20,7 @@
         background-color: #27706A;
         transition: all 0.5s ease;
         flex-flow: row wrap;
-
+        position: relative;
 
  
         h1 {
@@ -30,10 +30,49 @@
         }
 
         @include mobile {
+            flex-direction: column;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+
+            div {
+                text-align: center;
+                scroll-snap-align: center;
+                flex: none;
+            }
+
             &::-webkit-scrollbar {
                 display: none;
             }
+
+            .arrow_down {
+                display: block;
+                position: absolute;
+                bottom: 53px;
+                left: 50%;
+                transform: rotate(-90deg);
+    
+    
+                img {
+                    width: 30px;
+                    animation: arrowBlink 2s infinite;
+                }
+    
+                @keyframes arrowBlink {
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            
+            }
         }
+
+        .arrow_down {
+            display: none;
+            
+        }
+
+
     
 
         .card-wrapper {
@@ -172,9 +211,10 @@
 
             .logo {
                 flex: 2;
+                overflow-y: hidden;
 
                 img {
-                    width: 112px;
+                    width: 100px;
     
                     @include mobile{
                         width: 50px;
@@ -183,13 +223,17 @@
 
                 }
 
+                @include mobile {
+                    display: none;
+                }
+
 
             }
 
 
 
             .details {
-                flex: 3;
+                flex: 4;
 
                 @include mobile{
                     flex: 2;
@@ -219,7 +263,7 @@
                     margin-bottom: 20px;
                     @include mobile{
                         font-size: 12px;
-                        margin-top: 10px;
+                        margin-top: 5px;
                     }
                 }
 
@@ -314,7 +358,7 @@
                     color: white;
                     cursor: pointer;
                     transition: all 0.5s ease;
-                    border-radius: 0px;
+                    border-radius: 10px;
                 }
 
             }
@@ -339,6 +383,7 @@
 
     }
 
+
     .right {
         flex: 4;
         &::-webkit-scrollbar {
@@ -347,13 +392,14 @@
 
         @include mobile{
             flex: 3;
-            display: none;
+   
 
             &::-webkit-scrollbar {
                 display: none;
             }
 
         }
+
     }
 
 

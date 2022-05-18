@@ -27,7 +27,7 @@ export default function WorkMap() {
 
                 {(selectedCenter.active) ?
 
-                    <div className="active-card-wrapper" onClick={() => setSelectedCenter({ id: -1, active: (!selectedCenter.active) })}>
+                    <div className="active-card-wrapper">
                         <div className="logo">
                             <img src={Experiences[selectedCenter.id].icon} alt="" />
                         </div>
@@ -58,7 +58,6 @@ export default function WorkMap() {
                     :
 
                     <>
-                    <h1>Work Experiences</h1>
                         {Experiences.map((d) => (
                             <div className={(selectedCenter.id == d.id && selectedCenter.active) ? "active-card-wrapper" : "card-wrapper"} onClick={() => setSelectedCenter({ id: d.id, center: d.center, zoom: d.zoom, active: (!selectedCenter.active) })}>
 
@@ -91,6 +90,10 @@ export default function WorkMap() {
                             </div>
 
                         ))}
+
+                        <a className="arrow_down">
+                            <img src="assets/down.png" alt="" />
+                        </a>
 
 
 
@@ -125,6 +128,10 @@ export default function WorkMap() {
 
 
             </div>
+            
+
+
+
         </div>
     )
 
