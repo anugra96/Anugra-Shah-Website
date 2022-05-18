@@ -242,7 +242,7 @@ export const WebDevProjects = [
         id: 2,
         featured: true,
         title: "Anugra Shah Portfolio Website",
-        github: "",
+        github: "https://github.com/anugra96/Anugra-Shah-Website",
         link: "https://superlative-pastelito-e93ce4.netlify.app/",
         img: "assets/personal_website.png",
         tools: 
