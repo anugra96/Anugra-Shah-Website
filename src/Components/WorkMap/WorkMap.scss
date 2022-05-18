@@ -1,0 +1,363 @@
+@import "../../global.scss";
+
+.workmap {
+    display: flex;
+    color: black;
+
+
+    @include mobile{
+        flex-direction: column-reverse;
+        height: 100%;
+      }
+
+    .left {
+        flex: 3;
+        height: auto !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #27706A;
+        transition: all 0.5s ease;
+        flex-flow: row wrap;
+
+
+ 
+        h1 {
+            margin-top: 10px;
+            color: white;
+            
+        }
+
+        @include mobile {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    
+
+        .card-wrapper {
+            width: 86%;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 20px;
+            transition: all 0.5s ease;
+            -webkit-transition: -webkit-transform .5s ease;
+            padding: 15px;
+            text-align: left;
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
+
+            @include mobile{
+                padding: 20px;
+                width: 80%;
+                margin: 10px;
+                padding-top: 20px;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                -webkit-box-shadow: 0px 0px 22px 12px #92C8BA; 
+                box-shadow: 0px 0px 22px 12px #92C8BA;
+            }
+            
+            .logo {
+                flex: 2;
+                width: 30%;
+                overflow: hidden;
+
+                img {
+                    width: 100px;
+                    margin: 25px;
+    
+                    @include mobile{
+                        width: 50px;
+                        margin: 10px;
+                    }
+
+                }
+
+                @include mobile{
+                    flex: 1;
+                    
+                }
+            }
+
+            .details {
+                flex: 4;
+                width: 60%;
+                margin-left: 10px;
+                overflow: hidden;
+
+
+                h1 {
+                    font-size: 23px;
+                    color: #00c2cb;
+                    margin-bottom: 5px;
+    
+                    @include mobile{
+                        font-size: 20px;
+                    }
+                }
+    
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+    
+                    @include mobile{
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                }
+    
+                h3 {
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                    @include mobile{
+                        font-size: 12px;
+                    }
+                }
+
+                .skills {
+                    color: teal;
+                    font-weight: 500;
+                    p {
+                        text-align: left;
+                        margin: 5px;
+                    }
+    
+
+                }
+            }
+
+            .description {
+                display: none;
+                p {
+                    text-align: left;
+                    margin: 5px;
+                }
+
+                @include mobile{
+                    display: none;
+                }
+                
+            }
+        
+
+
+        }
+
+        .active-card-wrapper {
+            width: 85%;
+            height: 75%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px;
+            transition: all 0.5s ease;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            overflow-y: hidden;
+
+            
+
+
+            .logo {
+                flex: 2;
+
+                img {
+                    width: 112px;
+    
+                    @include mobile{
+                        width: 50px;
+                        margin: 10px;
+                    }
+
+                }
+
+
+            }
+
+
+
+            .details {
+                flex: 3;
+
+                @include mobile{
+                    flex: 2;
+                    overflow-y: hidden;
+                }
+                
+
+                h1 {
+                    font-size: 25px;
+                    color: #00c2cb;
+    
+                    @include mobile{
+                        font-size: 17px;
+                    }
+                }
+    
+                h2 {
+                    font-size: 15px;
+    
+                    @include mobile{
+                        font-size: 15px;
+                    }
+                }
+    
+                h3 {
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                    @include mobile{
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                }
+
+                .skills {
+                    color: teal;
+                    font-weight: 500;
+                    p {
+                        text-align: left;
+                        margin: 5px;
+                    }
+                    
+                    @include mobile {
+                        display: none;
+                    }
+
+                }
+                
+                
+            }
+
+            .description {
+                flex: 7;
+
+
+                .backbutton {
+                    width: 98%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: teal;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                    border-radius: 10px;
+
+                    &:hover {
+                        
+                        background-color: #00c2cb;
+  
+
+
+                    }
+
+                }
+
+
+                p {
+                    text-align: left;
+                    margin: 30px;
+
+
+                    @include mobile{
+                        margin: 20px;
+                    }
+                }
+
+                @include mobile {
+                    flex: 7;
+                }
+
+                
+            }
+
+            .backbutton {
+                flex: 1;
+                width: 98%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #013b40;
+                color: white;
+                cursor: pointer;
+                transition: all 1s ease;
+                font-weight: 500;
+
+                &:hover {
+                    
+                    background-color: white;
+                    color: black;
+
+                }
+
+                @include mobile {
+                    flex: 1 1;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                    border-radius: 0px;
+                }
+
+            }
+
+            @include mobile{
+                padding: 20px;
+                margin: 0px;
+                height: 85%;
+            }
+
+        }
+
+
+
+
+
+        @include mobile{
+            flex: 6;
+        }
+
+
+
+    }
+
+    .right {
+        flex: 4;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include mobile{
+            flex: 3;
+            display: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+        }
+    }
+
+
+
+
+
+}

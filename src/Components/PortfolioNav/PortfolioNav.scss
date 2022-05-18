@@ -1,0 +1,108 @@
+@import "../../global.scss";
+
+.portfolionav {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    color: white;
+
+    .workexperience {
+        flex: 1;
+        height: 100vh;
+        width: 25%;
+        background-color: teal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    .webdev {
+        flex: 1;
+        height: 100vh;
+        width: 25%;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://images.pexels.com/photos/6424589/pexels-photo-6424589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.4);
+
+        h1 {
+            font-size: 30px;
+        }
+
+        &:hover {
+            box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 0px 16px #CECECE;
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    .gis {
+        flex: 1;
+        height: 100vh;
+        width: 25%;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://images.pexels.com/photos/4048104/pexels-photo-4048104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.4);
+
+        h1 {
+            font-size: 30px;
+        }
+
+        &:hover {
+            box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 0px 16px #CECECE;
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    .maps {
+        flex: 1;
+        height: 100vh;
+        width: 25%;
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://images.pexels.com/photos/5967048/pexels-photo-5967048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");        background-size: cover;
+        box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.4);
+
+        h1 {
+            font-size: 30px;
+        }
+
+        &:hover {
+            box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 0px 16px #CECECE;
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    @include mobile{
+        flex-direction: column;
+    }
+    
+
+
+}

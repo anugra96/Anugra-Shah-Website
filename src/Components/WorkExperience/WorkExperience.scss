@@ -1,0 +1,86 @@
+@import "../../global.scss";
+
+
+.workexperience {
+    width: 100%;
+    height: auto !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+
+    h1 {
+        font-size: 50px;
+        
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    .container {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        margin: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .card {
+            width: 70%;
+            height: 250px;
+            border: 1px solid black;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+
+            .logo {
+                flex: 2;
+                width: 40%;
+
+                img {
+                    width: 150px;
+                    margin: 25px;
+                }
+
+            }
+
+            .details {
+                flex: 3;
+                width: 50%;
+                margin-left: 10px;
+                word-wrap: break-word;
+                
+                h1 {
+                    font-size: 25px;
+                }
+
+                h2 {
+                    font-size: 15px;
+                }
+
+                h3 {
+                    font-size: 10px;
+                }
+
+            }
+
+            .description {
+                
+                flex: 5;
+                p{
+                    margin: 20px;
+                }
+            }
+
+
+        }
+    }
+
+}
