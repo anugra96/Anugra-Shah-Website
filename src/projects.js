@@ -206,6 +206,35 @@ export const WebDevProjects = [
     {
         id: 0,
         featured: true,
+        title: "Community Notebook - Port Hope, ON",
+        github: "",
+        link: "https://candid-meringue-ae7485.netlify.app/",
+        img: "assets/communitynotebook.png",
+        tools:
+            [
+                "ReactJS",
+                "SCSS",
+                "MapBoxGL",
+            ],
+        desc: "This is a community notebook I developed during my time in the Borderline Project. Residents of Port Hope can use this fully responsive geospatial web app to add geotagged notes. The interface includes a feed component and a map viewer, showing all the notes that residents have tagged."
+    },
+    {
+        id: 1,
+        featured: true,
+        title: "Anugra Shah Portfolio Website",
+        github: "https://github.com/anugra96/Anugra-Shah-Website",
+        link: "https://superlative-pastelito-e93ce4.netlify.app/",
+        img: "assets/personal_website.png",
+        tools: 
+            [
+                "ArcGIS Pro/Online",
+            ],
+        desc: "Developed a web GIS application using Flask, Jupyter Notebook and Leaflet. The app visualizes the voting record of wards in Brampton, ON using a choropleth map. Features include a dynamic pop-ups providing city councilor contact info based on user's current location."
+    },
+    
+    {
+        id: 2,
+        featured: true,
         title: "Guess That Country - Web Game",
         github: "https://github.com/anugra96/GuessThatCountry_Geography_Web_Game_REACT_FLASK",
         link: "https://fast-woodland-19805.herokuapp.com/",
@@ -224,7 +253,7 @@ export const WebDevProjects = [
         desc: "Responsive web based geography game. Each round a random country is displayed, and player has 5 hints (direction, distance) to determine the country. ReactJS frontend supported by LeafletJS, Turf.js and Mapbox libraries. Flask backend API for geographic calculations such as Great Circle distance and Rhumb bearing direction. Hosted on Heroku."
     },
     {
-        id: 1,
+        id: 3,
         featured: true,
         title: "MyGov - Spatial Data Visualization Web App",
         github: "https://github.com/anugra96/MyGov_Web_GIS_App_FLASK",
@@ -237,34 +266,6 @@ export const WebDevProjects = [
                 "Leaflet",
             ],
         desc: "Developed a web GIS application using Flask, Jupyter Notebook and Leaflet. The app visualizes the voting record of wards in Brampton, ON using a choropleth map. Features include a dynamic pop-ups providing city councilor contact info based on user's current location."
-    },
-    {
-        id: 2,
-        featured: true,
-        title: "Anugra Shah Portfolio Website",
-        github: "https://github.com/anugra96/Anugra-Shah-Website",
-        link: "https://superlative-pastelito-e93ce4.netlify.app/",
-        img: "assets/personal_website.png",
-        tools: 
-            [
-                "ArcGIS Pro/Online",
-            ],
-        desc: "Developed a web GIS application using Flask, Jupyter Notebook and Leaflet. The app visualizes the voting record of wards in Brampton, ON using a choropleth map. Features include a dynamic pop-ups providing city councilor contact info based on user's current location."
-    },
-    {
-        id: 3,
-        featured: true,
-        title: "Web Banners",
-        github: "",
-        link: "",
-        img: "",
-        tools:
-            [
-                "Javascript",
-                "Greensock Animations",
-                "HTML, CSS",
-            ],
-        desc: "HTML banner ads and landing pages using Javascript/CSS animations for Mazda, Air Canada, HSBC, Johnson & Johnson and Shell Canada."
     }
 ];
 
