@@ -7,7 +7,7 @@ export const Experiences = [
         icon: "assets/borderline.png",
         desc:
             [
-                "Leveraged knowledge of REST API's to create endpoints that serve the Borderline Project iOS app using Python.",
+                "Developed full stack (MERN) collaborative mapping web app for users to share experiences in the form of geotagged notes.",
 
                 "Identified spatially significant correlations (using Getis Ord Gi*) and presented mapped findings at the InfoPlus 2021 Conference.",
 
@@ -18,6 +18,8 @@ export const Experiences = [
         zoom: 16,
         skills: 
             [
+                "ReactJS",
+                "MERN Stack",
                 "Python", 
                 "ESRI Suite", 
                 "Mapbox Studio", 
@@ -130,16 +132,16 @@ export const Experiences = [
         icon: "assets/wunderman.png",
         desc:
             [
-                "Contributed web development (Vanilla JS) and support to large scale enterprise websites: Mazda.ca and Hotels.com.",
+                "Contributed web development (HTML, CSS, JS) and support to large scale enterprise websites: Mazda.ca and Hotels.com.",
 
                 "Built HTML banner ads and landing pages using Javascript/CSS animations for Mazda, Air Canada, HSBC, Johnson & Johnson and Shell Canada.",
 
-                "Wrote a Python script to automate banner creation and updates which reduced project timeline from 70 hours to 50 hours per week."
+                "Wrote a Python script to automate web banner development which reduced project timeline from 70 hours to 50 hours on avg."
 
             ],
         center: [43.67163759068132, -79.38298116016668],
         zoom: 16,
-        skills: ["Python", "R/RStudio", "ArcGIS Suite (Pro/Online)"],
+        skills: ["HTML/CSS", "Javascript", "Javascript Animations", "Python", "Google Dialog Flow"],
     },
 
 
