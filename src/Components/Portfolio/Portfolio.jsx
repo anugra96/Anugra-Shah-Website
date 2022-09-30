@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { FeaturedProjects, StaticMapProjects, WebMapProjects, WebDevProjects } from "../../projects";
 
 export default function Portfolio() {
-    const [selected, setSelected] = useState("staticmaps");
+    const [selected, setSelected] = useState("webdev");
     const [clickedItem, setClickedItem] = useState(
         {
             id: -1,
@@ -31,18 +31,17 @@ export default function Portfolio() {
 
     const list = [
         {
+            id: "webdev",
+            title: "Web Development"
+        },
+        {
             id: "staticmaps",
             title: "Static Maps"
         },
         {
             id: "webmaps",
             title: "Web Maps"
-        },
-        {
-            id: "webdev",
-            title: "Web Development"
         }
-
     ];
 
     useEffect(() => {

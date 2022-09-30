@@ -229,7 +229,7 @@ export const WebDevProjects = [
             [
                 "ArcGIS Pro/Online",
             ],
-        desc: "Developed a web GIS application using Flask, Jupyter Notebook and Leaflet. The app visualizes the voting record of wards in Brampton, ON using a choropleth map. Features include a dynamic pop-ups providing city councilor contact info based on user's current location."
+        desc: "Created a responsive portfolio website to showcase my work experience and projects using ReactJS, hosted on Netlify. Built interactive map-based component to visualize the location and details of my previous work experience."
     },
     
     {
