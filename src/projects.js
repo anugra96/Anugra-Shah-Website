@@ -207,7 +207,7 @@ export const WebDevProjects = [
         id: 0,
         featured: true,
         title: "Community Notebook - Port Hope, ON",
-        github: "",
+        github: "https://github.com/anugra96/Community_Notebook",
         link: "https://candid-meringue-ae7485.netlify.app/",
         img: "assets/communitynotebook.png",
         tools:
